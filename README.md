@@ -1,10 +1,23 @@
 # Tactical Style ML Service
 
+[![CI](https://github.com/wiggin944/tactical-style-ml-service/actions/workflows/ci.yml/badge.svg)](https://github.com/wiggin944/tactical-style-ml-service/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Docker](https://img.shields.io/badge/Docker-ready-blue)
+
 Production-style ML service for representing football teams as continuous tactical profiles.
 
 This repository productionises the tactical-style stage of a larger MSc Computer Science football modelling project. The research pipeline was refactored into explicit preprocessing, persisted model state, cohort inference, monitoring, FastAPI endpoints, automated tests, Docker and CI.
 
 > The original research database and fitted dissertation model are not included. The public repository generates a deterministic synthetic demo artefact so the engineering stack can be run without exposing research data or fitted parameters.
+
+## What this demonstrates
+
+- research-to-production ML engineering
+- reproducible preprocessing and persisted model state
+- typed FastAPI inference with input validation
+- automated testing, Docker packaging and GitHub Actions CI
+- operational OOD/distribution diagnostics
+- separation of public demo assets from private research data and fitted parameters
 
 ## Model
 
