@@ -129,6 +129,21 @@ README.md
 
 The work includes modular data/feature/preprocessing/model/inference code, temporal leakage guards, persisted preprocessing state, schema validation, cohort-aware inference, OOD diagnostics, typed FastAPI models, automated tests, Docker, CI and separation of private research assets from the public repository.
 
+
+## Tableau dashboard
+
+A Tableau portfolio dashboard from the wider MSc football-modelling system complements this productionised tactical-style service by showing how the transfer model behaves at player level.
+
+- **255 held-out movers**
+- **43 modelled performance measures**
+- **7.79% lower scaled prediction error than carry-forward**
+- Interactive comparison of prior-season performance, context-aware prediction and observed post-transfer performance
+- Metric-level view showing where the context model improves on — and where it loses to — the carry-forward baseline
+
+The public dashboard exposes eight interpretable per-90 metrics while the headline held-out result is calculated across all 43 measures.
+
+[Open the Tableau dashboard files](portfolio/tableau-transfer-dashboard/)
+
 ## Limitations
 
 The six dimensions are latent NMF components, not manually defined tactical labels. Predictions are cohort-relative because preprocessing contains within-season transforms. The synthetic public model demonstrates the software contract only and should not be interpreted as meaningful football analysis.
